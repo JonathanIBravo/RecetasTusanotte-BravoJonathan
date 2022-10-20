@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Noto Serif', serif; */
 
 *{
     padding: 0;
@@ -23,7 +25,7 @@ header h1{
     font-size: 45px;
     font-style: italic;
     font-weight: 200px;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Noto Serif', serif;
 }
 header nav ul {
     list-style: none ;
@@ -46,12 +48,11 @@ header nav ul li a{
 }
 
 header nav ul li:hover{
+    color: white;
     font-size: 30px;
     background-color:#7A6D48 ;
     border-radius: 5px;
 }
-
-
 /*--------------MAIN------------------*/
 main{
     background-color: #7a6d489b;
@@ -69,6 +70,7 @@ main{
 }
 .hero div{
     color: white;
+    border: 5px solid white;
 }
 
 .title{
@@ -80,18 +82,22 @@ main{
 }
 .hero div h2{
     font-size: 80px;
-    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;
+    font-family: 'Noto Serif', serif;
+    margin: 15px 15px 15px 15px;
 }
 .hero div h3 {
     font-size: 25px;
-    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400;
+    font-family: 'Noto Serif', serif; 
+    text-align: center;
 }
 .info h2{
     text-align: center;
     color: white;
     font-size: 25px;
-    font-family: 'Montserrat', sans-serif; 
-    /* background-color: black; */
+    font-weight: 600;
+    font-family: 'Noto Serif', serif; 
     background-color: #594f33;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -100,8 +106,7 @@ main{
     text-align: center;
     color: white;
     font-size: 25px;
-    font-family: 'Montserrat', sans-serif; 
-    /* background-color: black; */
+    font-family: 'Noto Serif', serif;
     background-color: #594f33;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -111,8 +116,8 @@ main{
     text-align: center;
     color: white;
     font-size: 25px;
-    font-family: 'Montserrat', sans-serif; 
-    /* background-color: black; */
+    font-weight: 600;
+    font-family: 'Noto Serif', serif; 
     background-color: #594f33;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -123,7 +128,7 @@ main{
     flex-direction: row;
     justify-content: center; 
     align-items: center;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Noto Serif', serif; 
 }
 .intro p{
     width: 300px;
@@ -132,14 +137,16 @@ main{
 }
 .info div img{
     width: 300px;
-    height: 250px;
+    height: 300px;
     margin: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 8px 8px rgba(0, 0, 0, 0.433);
 }  
 
 /*Fotos*/
 .grid-fotos{
     width: 100%;
-    margin-top: 20px;
+    padding: 5px 10px 5px 10px ;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 300px;
@@ -149,6 +156,8 @@ main{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 10px 8px 8px rgba(0, 0, 0, 0.433);
 }
 .pizza{
     grid-column: span 2;
@@ -168,7 +177,7 @@ main{
     font-size: 25px;
     padding: 10px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif; ;
+    font-family: 'Noto Serif', serif;
 }
 
 /* pagina-recetas*/
@@ -200,18 +209,18 @@ main{
 .recetasf h3{
     color: black;
     font-size: 30px;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Noto Serif', serif; 
 }
 .recetasf div a{
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif; 
+    text-decoration:none;
+    font-family: 'Noto Serif', serif;
     font-size: 15px;
     color: black;
-    padding: 5px 10px 5px 10px ;
     transition: 0.5s ease-out;
 }
 .recetasf div:hover{
     transform: scale(1.2);
+    box-shadow: 15px 8px 8px rgba(0, 0, 0, 0.433);
 }
 .recetasf div a:hover{
     font-size: 20px; 
@@ -223,7 +232,7 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Noto Serif', serif; 
 }
 .parrafo{
     grid-column: span 2;
@@ -240,7 +249,7 @@ main{
     font-size: 25px;
     color: black;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Serif', serif;
 }
 .formulario{
     grid-column: span 1;
@@ -282,7 +291,7 @@ main{
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Noto Serif', serif; 
 }
 .grid-galeria{
     width: 100%;
@@ -322,7 +331,7 @@ main{
 }
 .col-lg-4 h2{
     font-size: 20px;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Noto Serif', serif;
 }
 .col-lg-4 iframe{
     width: 600px;
@@ -350,8 +359,8 @@ ul{
     padding: 70px 0;
 }
 .footer-col{
-    width: 25%;
-    padding: 0 15px;
+    width: 25%
+    /* padding: 0 15px; */
 }
 .footer-col h4{
 	font-size: 18px;
@@ -507,13 +516,13 @@ ul{
 }
 /*footer*/
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 920px){
     .footer-col{
         width: 50%;
         margin-bottom: 30px;
     }
 }
-@media(max-width: 574px){
+@media screen and (max-width: 450px){
     .footer-col{
     width: 100%;
 }
