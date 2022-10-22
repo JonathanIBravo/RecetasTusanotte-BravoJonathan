@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 /* font-family: 'Inconsolata', monospace;
 font-family: 'Noto Serif', serif; */
 
@@ -9,50 +9,42 @@ font-family: 'Noto Serif', serif; */
     box-sizing: border-box;
 }
 /*--------------HEADER------------------*/
-
-header{
-    background-color: black ;
-    height: 70px;
-    top: 0;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+container-fluid a{
+    font-size: 40px;
 }
-header h1{
+.navbar-brand{
     color: White;
-    font-size: 45px;
+    margin-left: 10px;
+    font-size: 40px;
     font-style: italic;
-    font-weight: 200px;
+    font-weight: 500px;
+    font-family: 'Passion One', cursive;
+}
+.navbar-brand:hover{
+    transform: scale(1.5);
+    transition: 1.0s ease-out; 
+}
+.nav-link{
     font-family: 'Noto Serif', serif;
-}
-header nav ul {
-    list-style: none ;
-    display: flex;
-}
-header nav ul li{
-    border-style: 2px solid white;
-    margin: 8px 8px 8px 8px;
-    transition: 0.5s ease-out;
-}
-header nav ul li a{
-    text-decoration: none;
-    text-decoration: dotted;
-    font-family: 'Montserrat', sans-serif; 
     color:white;
-    margin: 0px;
-    padding: 20px;
-    font-size: 20px;
+    margin-left: 2px;
+    padding: 5px;
+    font-size: 15px;
     text-transform: uppercase;
 }
-
-header nav ul li:hover{
+.nav-item{
+    border-style: 2px solid white;
+    margin: 8px 8px 8px 8px;
+    transition: 1.5s ease-out;
+}
+.nav-item:hover{
     color: white;
     font-size: 30px;
     background-color:#7A6D48 ;
+    transform: scale(1.2);
     border-radius: 5px;
 }
+
 /*--------------MAIN------------------*/
 main{
     background-color: #7a6d489b;
@@ -195,7 +187,7 @@ main{
     width: 300px;
     height: 350px;
     border-radius: 5px;
-    box-shadow: 10px 10px 27px -4px rgba(0, 0, 0, 0.258);
+    box-shadow: 10px 10px 27px -4px rgba(0, 0, 0, 0.581);
     -webkit-box-shadow: 10px 10px 27px -4px rgba(0, 0, 0, 0.258);
     -moz-box-shadow:10px 10px 27px -4px rgba(0, 0, 0, 0.258);
     transition: 0.5s;
@@ -449,26 +441,8 @@ ul{
     margin: 10px;
 }
 /*Responsive*/
-/*Header*/
-@media screen and (max-width: 930px) {
-    header nav ul li a{
-        font-size: 10px;
-    }
-}
-@media screen and (max-width: 700px) {
-    header {
-        flex-direction: column;
-    }
-    header h1{
-        font-size: 20px;
-    }
-    header nav ul li a{
-        font-size: 10px;
-        padding: 10px;
-    }
-}
 /*MAIN*/
-/*index*/
+
 @media screen and (max-width: 970px) {
     .intro{
         flex-direction: column;
