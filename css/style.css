@@ -13,7 +13,6 @@ container-fluid a{
     font-size: 40px;
 }
 .navbar-brand{
-    color: White;
     margin-left: 10px;
     font-size: 40px;
     font-style: italic;
@@ -26,20 +25,14 @@ container-fluid a{
 }
 .nav-link{
     font-family: 'Noto Serif', serif;
-    color:white;
-    margin-left: 2px;
     padding: 5px;
     font-size: 15px;
     text-transform: uppercase;
-}
-.nav-item{
-    border-style: 2px solid white;
     margin: 8px 8px 8px 8px;
-    transition: 1.5s ease-out;
+    transition: 1.0s ease-out;
 }
-.nav-item:hover{
-    color: white;
-    font-size: 30px;
+.nav-link:hover{
+    font-size: 20px;
     background-color:#7A6D48 ;
     transform: scale(1.2);
     border-radius: 5px;
@@ -47,7 +40,7 @@ container-fluid a{
 
 /*--------------MAIN------------------*/
 main{
-    background-color: #7a6d489b;
+    background-color: #7A6D48;
 }
 .hero{
     background: linear-gradient(rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)), url("../img/gourmet-chef.jpg");
@@ -114,6 +107,7 @@ main{
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
 
 .intro{
     display: flex;
