@@ -1,0 +1,33 @@
+@import"../base/variables";
+/*---HEADER-----*/
+container-fluid a{
+    font-size: 40px;
+}
+.navbar-brand{
+    margin-left: 10px;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 500px;
+    font-family: 'Passion One', cursive;
+    &:hover{
+        transform: scale(1.5);
+        transition: 1.0s ease-out; 
+    }
+}
+.nav-link{
+    font-family: 'Noto Serif', serif;
+    margin: 8px;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 1.0s ease-out;
+    &:hover{
+        transform: scale(1.2);
+        font-size: 20px;
+        // background-color:#7A6D48 ;
+        background-color: $beage-dark;
+        transform: scale(1.2);
+        border-radius: 5px;
+    }
+}
+
+

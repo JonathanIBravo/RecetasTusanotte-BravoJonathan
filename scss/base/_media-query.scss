@@ -1,0 +1,156 @@
+/*Responsive*/
+/*MAIN*/
+
+@media screen and (max-width: 970px) {
+    .intro{
+        flex-direction: column;
+    }
+    .intro p, img{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media screen and (max-width:680px){
+    .hero div h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    .hero div h2{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:750px){
+    .segundo__h1{
+        font-size: 50px;
+        text-align: center;
+    }
+}
+/*Media Querie grid fotos*/
+@media screen and (max-width: 920px) {
+    .grid-fotos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 280px;
+    }
+    .grid-item{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+@media screen and (max-width: 450px) {
+    .grid-fotos{
+        grid-template-columns: 1fr;
+    }
+    .grid-item{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+/*footer*/
+
+@media screen and (max-width: 920px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 450px){
+    .footer-col{
+    width: 100%;
+}
+}
+
+/*contacto*/
+@media screen and (max-width: 920px) {
+    .grid-contacto{
+        grid-template-columns: repeat ( 2, 1fr) ;
+        grid-template-rows: 400px;
+    }
+    .grid-contacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-dos{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+@media screen and (max-width: 450px){
+    .grid-contacto{
+        grid-template-columns: 1fr;
+    }
+    .grid-contacto{
+        flex-direction: column;
+    }
+    .grid-item{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+/*acerca de*/
+@media screen and (max-width: 920px) {
+    .grid-galeria{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 300px;
+    }
+    .pasta{
+        grid-column: span 2;
+    }
+}
+@media screen and (max-width: 450px) {
+    .grid-galeria{
+        grid-template-columns: 1fr;
+    }
+    .grid-tres{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .sobreMi p{
+        height: 100%;
+    }
+}
+
+/*Ubicacion*/
+
+@media screen and (max-width: 890px){
+    .col-lg-8{
+        font-size: 20px;
+        width: 350px;
+        height: 280px;
+        margin-left: 10px;
+    }
+    .col-lg-4 iframe{
+        width: 250px;
+        height: 200px;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 450px){
+    .container-fluid{
+        flex-direction: column;
+    }
+    .ubicacion{
+        height: 750px;
+        margin: 0px;
+    }
+    .col-lg-8{
+        width: 300px;
+        height: 250px;
+        p{
+            width: 100%;
+            height: 100%;
+            font-size: 15px;
+        }
+    }
+    .col-lg-4 {
+        width: 300px;
+        height: 200px;
+        margin:0px;
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

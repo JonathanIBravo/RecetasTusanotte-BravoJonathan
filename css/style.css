@@ -40,7 +40,7 @@ container-fluid a{
 
 /*--------------MAIN------------------*/
 body{
-    background-color: #7A6D48;
+    background-color: #998a63;
 }
 .hero{
     background: linear-gradient(rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)), url("../img/gourmet-chef.jpg");
@@ -56,14 +56,6 @@ body{
 .hero div{
     color: white;
     border: 5px solid white;
-}
-
-.title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
 }
 .hero div h1{
     font-size: 80px;
@@ -96,7 +88,12 @@ body{
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
+.info img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 5px;
+}
 .subtitulo{
     text-align: center;
     color: white;
@@ -122,12 +119,6 @@ body{
     width: 300px;
     height: 250px;
     margin-top: 20px;
-}
-.info div img{
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    border-radius: 5px;
 }  
 .intro img{
     box-shadow: 10px 8px 8px rgba(0, 0, 0, 0.433);
@@ -142,7 +133,7 @@ body{
     grid-auto-rows: 300px;
     gap: 15px;
 }
-.grid-fotos div img{
+.grid-item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -247,7 +238,7 @@ body{
     grid-column: span 1;
 }
 .formulario{
-    background-color: #7A6D48;
+    background-color: #594f33;
     width: 400px;
     height: 300px;
     margin: 20px;
@@ -301,7 +292,7 @@ body{
     grid-auto-rows: 400px;
     gap: 15px;
 }
-.grid-galeria div img{
+.grid-tres img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -314,6 +305,9 @@ body{
 }
 .pasta{
     grid-row: 2 span;
+}
+.slide img{
+    height: 65vh;
 }
 /*Ubicacion*/
 .ubicacion{
@@ -341,11 +335,12 @@ body{
     margin-right: 20px;
     border: 2px solid #e91e63 ;
 }
-.slide img{
-    height: 65vh;
-}
-/*--------------FOOTER------------------*/
 
+/*--------------FOOTER------------------*/
+.footer{
+	background-color: #594f33;
+    padding: 70px 0;
+}
 .container{
 	max-width: 1170px;
 	margin:auto;
@@ -357,13 +352,8 @@ body{
 ul{
 	list-style: none;
 }
-.footer{
-	background-color: #594f33;
-    padding: 70px 0;
-}
 .footer-col{
     width: 25%
-    /* padding: 0 15px; */
 }
 .footer-col h4{
 	font-size: 18px;
@@ -581,7 +571,7 @@ ul{
     }
 }
 @media screen and (max-width: 450px){
-    .container fluid{
+    .container-fluid{
         flex-direction: column;
     }
     .col-lg-8{
