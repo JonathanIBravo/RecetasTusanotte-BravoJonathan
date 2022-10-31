@@ -1,23 +1,33 @@
-/*Responsive*/
+
 /*MAIN*/
 
 @media screen and (max-width: 970px) {
     .intro{
         flex-direction: column;
-    }
-    .intro p, img{
-        width: 300px;
-        height: 300px;
+        .intro{
+            p, img{
+                width: 300px;
+                height: 300px;
+            }
+        }
     }
 }
 @media screen and (max-width:680px){
-    .hero div h1{
-        font-size: 50px;
-        text-align: center;
+    .hero {
+        div {
+            h1{
+                font-size: 50px;
+                text-align: center;
+            }
+        }
     }
-    .hero div h2{
-        font-size: 20px;
-        text-align: center;
+    .hero {
+        div {
+            h2{
+                font-size: 20px;
+                text-align: center;
+            }
+        }
     }
 }
 @media screen and (max-width:750px){
@@ -30,20 +40,20 @@
 @media screen and (max-width: 920px) {
     .grid-fotos{
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 280px;
-    }
-    .grid-item{
-        grid-column: span 1;
-        grid-row: span 1;
+        grid-template-rows: 1fr;
+        .grid-item{
+            grid-column: span 1;
+            grid-row: span 1;
+        }
     }
 }
 @media screen and (max-width: 450px) {
     .grid-fotos{
         grid-template-columns: 1fr;
-    }
-    .grid-item{
-        grid-column: span 1;
-        grid-row: span 1;
+        .grid-item{
+            grid-column: span 1;
+            grid-row: span 1;
+        }
     }
 }
 /*footer*/

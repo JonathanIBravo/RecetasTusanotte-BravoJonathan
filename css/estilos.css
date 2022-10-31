@@ -6,12 +6,10 @@
   box-sizing: border-box;
 }
 
-/*--VARIABLES UTILIZADAS EN EL PROYECTO--*/
 /*--PALETA DE COLORES--*/
 /*--HEADER--*/
 /*--MAIN--*/
 /*--FOOTER--*/
-/*--footer-hover--*/
 /*---HEADER-----*/
 container-fluid a {
   font-size: 40px;
@@ -44,12 +42,185 @@ container-fluid a {
   border-radius: 5px;
 }
 
-/*--VARIABLES UTILIZADAS EN EL PROYECTO--*/
 /*--PALETA DE COLORES--*/
 /*--HEADER--*/
 /*--MAIN--*/
 /*--FOOTER--*/
-/*--footer-hover--*/
+/*MAIN*/
+@media screen and (max-width: 970px) {
+  .intro {
+    flex-direction: column;
+  }
+  .intro .intro p, .intro .intro img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .hero div h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .hero div h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .segundo__h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+}
+/*Media Querie grid fotos*/
+@media screen and (max-width: 920px) {
+  .grid-fotos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .grid-fotos .grid-item {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+@media screen and (max-width: 450px) {
+  .grid-fotos {
+    grid-template-columns: 1fr;
+  }
+  .grid-fotos .grid-item {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+/*footer*/
+@media screen and (max-width: 920px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+/*contacto*/
+@media screen and (max-width: 920px) {
+  .grid-contacto {
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-rows: 400px;
+  }
+  .grid-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-dos {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+@media screen and (max-width: 450px) {
+  .grid-contacto {
+    grid-template-columns: 1fr;
+  }
+  .grid-contacto {
+    flex-direction: column;
+  }
+  .grid-item {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+/*acerca de*/
+@media screen and (max-width: 920px) {
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px;
+  }
+  .pasta {
+    grid-column: span 2;
+  }
+}
+@media screen and (max-width: 450px) {
+  .grid-galeria {
+    grid-template-columns: 1fr;
+  }
+  .grid-tres {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .sobreMi p {
+    height: 100%;
+  }
+}
+/*Ubicacion*/
+@media screen and (max-width: 890px) {
+  .col-lg-8 {
+    font-size: 20px;
+    width: 350px;
+    height: 280px;
+    margin-left: 10px;
+  }
+  .col-lg-4 iframe {
+    width: 250px;
+    height: 200px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container-fluid {
+    flex-direction: column;
+  }
+  .ubicacion {
+    height: 750px;
+    margin: 0px;
+  }
+  .col-lg-8 {
+    width: 300px;
+    height: 250px;
+  }
+  .col-lg-8 p {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+  }
+  .col-lg-4 {
+    width: 300px;
+    height: 200px;
+    margin: 0px;
+  }
+  .col-lg-4 iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+/*------EXTEND-------*/
+.ubicacion div .col-lg-4 h2, .recetasf h3, .grid-fotos .grid-item h3, .subtitulo, .info h3, .info h2, .hero div h2 {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Noto Serif", serif;
+}
+
+.ubicacion div .col-lg-8 p, .sobreMi p, .grid-contacto .parrafo, .intro p {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Noto Serif", serif;
+}
+
+.sobreMi p, .grid-contacto .parrafo, .intro, .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ubicacion, .recetasf {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*--MIXIN*/
 /*----MAIN-----*/
 body {
   background-color: #998a63;
@@ -62,9 +233,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .hero div {
   color: white;
@@ -77,9 +245,6 @@ body {
   margin: 15px 15px 15px 15px;
 }
 .hero div h2 {
-  font-size: 25px;
-  font-weight: 400;
-  font-family: "Noto Serif", serif;
   text-align: center;
 }
 .hero .segundo__h1 {
@@ -93,9 +258,6 @@ body {
 .info h2 {
   text-align: center;
   color: white;
-  font-size: 25px;
-  font-weight: 600;
-  font-family: "Noto Serif", serif;
   background-color: #594f33;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -103,8 +265,6 @@ body {
 .info h3 {
   text-align: center;
   color: white;
-  font-size: 25px;
-  font-family: "Noto Serif", serif;
   background-color: #594f33;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -119,26 +279,18 @@ body {
 .subtitulo {
   text-align: center;
   color: white;
-  font-size: 25px;
-  font-weight: 600;
-  font-family: "Noto Serif", serif;
   background-color: #594f33;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .intro {
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 .intro p {
-  font-size: 15px;
   color: black;
-  font-family: "Noto Serif", serif;
-  width: 300px;
-  height: 250px;
+  width: 320px;
+  height: 280px;
   margin-top: 20px;
 }
 .intro img {
@@ -176,18 +328,13 @@ body {
   color: white;
   background-color: rgba(89, 79, 51, 0.3607843137);
   width: 100%;
-  font-size: 25px;
   padding: 10px;
   text-align: center;
-  font-family: "Noto Serif", serif;
 }
 
 /* pagina-recetas*/
 .recetasf {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
 }
 .recetasf div {
   text-align: center;
@@ -224,9 +371,6 @@ body {
 }
 .recetasf h3 {
   color: black;
-  font-size: 30px;
-  font-weight: 600;
-  font-family: "Noto Serif", serif;
 }
 
 /*--pagina-contacto--*/
@@ -245,15 +389,10 @@ body {
   width: 100%;
   height: 350px;
   margin: 0px 20px 0px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .grid-contacto .parrafo {
-  font-size: 25px;
   color: black;
   text-align: center;
-  font-family: "Noto Serif", serif;
 }
 .grid-contacto .formulario {
   grid-column: span 1;
@@ -300,12 +439,7 @@ body {
   color: black;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 10px;
-  font-size: 20px;
-  font-family: "Noto Serif", serif;
 }
 
 .grid-galeria {
@@ -338,9 +472,6 @@ body {
 
 /*--------------Ubicacion----------*/
 .ubicacion {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   width: 100%;
   height: 700px;
 }
@@ -349,7 +480,7 @@ body {
   height: 200px;
 }
 .ubicacion div .col-lg-8 p {
-  font-size: 20px;
+  color: black;
   width: 100%;
   height: 100%;
   margin-top: 10px;
@@ -359,11 +490,9 @@ body {
   height: 400px;
 }
 .ubicacion div .col-lg-4 h2 {
+  color: black;
   -webkit-text-decoration: underline 2px black;
           text-decoration: underline 2px black;
-  font-size: 20px;
-  font-weight: 600;
-  font-family: "Noto Serif", serif;
 }
 .ubicacion div .col-lg-4 iframe {
   width: 100%;
@@ -372,12 +501,10 @@ body {
   border: 2px solid black;
 }
 
-/*--VARIABLES UTILIZADAS EN EL PROYECTO--*/
 /*--PALETA DE COLORES--*/
 /*--HEADER--*/
 /*--MAIN--*/
 /*--FOOTER--*/
-/*--footer-hover--*/
 /*----FOOTER----*/
 .footer {
   background-color: #594f33;
@@ -407,7 +534,7 @@ body {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: color-fuchsia;
+  background-color: #e91e63;
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -454,13 +581,12 @@ body {
   color: white;
 }
 
-/*Responsive*/
 /*MAIN*/
 @media screen and (max-width: 970px) {
   .intro {
     flex-direction: column;
   }
-  .intro p, img {
+  .intro .intro p, .intro .intro img {
     width: 300px;
     height: 300px;
   }
@@ -485,9 +611,9 @@ body {
 @media screen and (max-width: 920px) {
   .grid-fotos {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 280px;
+    grid-template-rows: 1fr;
   }
-  .grid-item {
+  .grid-fotos .grid-item {
     grid-column: span 1;
     grid-row: span 1;
   }
@@ -496,7 +622,7 @@ body {
   .grid-fotos {
     grid-template-columns: 1fr;
   }
-  .grid-item {
+  .grid-fotos .grid-item {
     grid-column: span 1;
     grid-row: span 1;
   }
