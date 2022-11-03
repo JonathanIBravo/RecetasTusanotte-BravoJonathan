@@ -10,8 +10,12 @@ container-fluid a{
     font-weight: 500px;
     font-family: 'Passion One', cursive;
     &:hover{
-        transform: scale(1.5);
+        margin-left: 25px;
+        transform: scale(1.2);
         transition: 1.0s ease-out; 
+    }
+    img{
+        margin-left: 15px;
     }
 }
 .nav-link{

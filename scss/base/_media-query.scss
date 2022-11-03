@@ -67,9 +67,9 @@
 @media screen and (max-width: 450px){
     .footer-col{
     width: 100%;
+    margin: 15px;
 }
 }
-
 /*contacto*/
 @media screen and (max-width: 920px) {
     .grid-contacto{
@@ -118,6 +118,7 @@
         grid-row: span 1;
     }
     .sobreMi p{
+        padding: 5px;
         height: 100%;
     }
 }
@@ -142,25 +143,29 @@
         flex-direction: column;
     }
     .ubicacion{
-        height: 750px;
-        margin: 0px;
+        height: 620px;
     }
     .col-lg-8{
-        width: 300px;
+        width: 100%;
         height: 250px;
         p{
             width: 100%;
             height: 100%;
-            font-size: 15px;
+            font-size: 10px;
+            margin: 0px;
         }
     }
     .col-lg-4 {
-        width: 280px;
+        width: 100%;
         height: 180px;
-        margin:0px;
+        h2{
+            font-size: 10px;
+            margin: 0px;
+        }
         iframe{
             width: 100%;
             height: 100%;
+            margin-bottom: 5px;
         }
     }
 }
