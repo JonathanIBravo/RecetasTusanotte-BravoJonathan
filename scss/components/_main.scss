@@ -307,7 +307,7 @@ body{
     div{
         .col-lg-8{
             width: 350px;
-            height: 220px;
+            height: 250px;
             p{
                 color:$txt-black;
                 @extend %parrafo;
@@ -315,8 +315,8 @@ body{
             }
         }
         .col-lg-4{
-            width:300px;
-            height:300px;
+            width:350px;
+            height:250px;
             h2{
                 color: $txt-black;
                 text-decoration: underline 2px black;

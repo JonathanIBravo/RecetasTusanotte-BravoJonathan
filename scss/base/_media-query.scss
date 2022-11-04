@@ -125,47 +125,65 @@
 
 /*Ubicacion*/
 
-@media screen and (max-width: 890px){
-    .col-lg-8{
-        font-size: 20px;
-        width: 350px;
-        height: 280px;
-        margin-left: 10px;
-    }
-    .col-lg-4 iframe{
-        width: 250px;
-        height: 200px;
-        margin-right: 20px;
+@media screen and (max-width: 820px){
+    .container-fluid{
+        flex-direction: column;
+        .ubicacion{
+            width: 450px;
+            height: 750px;
+            margin-left: 20px;
+            .col-lg-8{
+                p{
+                    width: 400px;
+                    height: 350px;
+                    font-size: 20px;
+                    margin: 0px;
+                }
+            }
+            .col-lg-4{
+                h2{
+                    font-size: 20px;
+                }
+                iframe{
+                    width: 400px;
+                    height: 400px;
+                    margin-right: 20px;
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 450px){
     .container-fluid{
         flex-direction: column;
-    }
-    .ubicacion{
-        height: 620px;
-    }
-    .col-lg-8{
-        width: 100%;
-        height: 250px;
-        p{
-            width: 100%;
-            height: 100%;
-            font-size: 10px;
-            margin: 0px;
-        }
-    }
-    .col-lg-4 {
-        width: 100%;
-        height: 180px;
-        h2{
-            font-size: 10px;
-            margin: 0px;
-        }
-        iframe{
-            width: 100%;
-            height: 100%;
-            margin-bottom: 5px;
+        align-items: center;
+        .ubicacion{
+            width: 350px;
+            height: 650px;
+            .col-lg-8{
+                margin-left: 10px;
+                padding-top: 10px;
+                margin-bottom: 20px;
+                p{
+                    width: 250px;
+                    height: 250px;
+                    font-size: 20px;
+                    margin-left:10px;
+                }
+            }
+            .col-lg-4 {
+                padding-top: 20px;
+                margin-left: 10px;
+                h2{
+                    font-size: 20px;
+                    margin: 0px;
+                }
+                iframe{
+                    width: 250px;
+                    height: 250px;
+                    margin-bottom: 5px;
+                }
+            }
         }
     }
 }
