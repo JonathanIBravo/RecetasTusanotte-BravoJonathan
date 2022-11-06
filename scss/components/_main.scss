@@ -1,5 +1,6 @@
 @import"../base/variables";
 @import"../base/media-query";
+@import"../base/generales";
 /*------EXTEND-------*/
 
 %txt-font{
@@ -50,7 +51,7 @@ body{
     @extend %flex;
     div{
         color: $txt-white;
-        border: 5px solid white;
+        border: 5px solid $txt-white;
         h1{
             font-size: 80px;
             font-weight: 700;
@@ -66,7 +67,7 @@ body{
         color:$txt-white;
         font-size: 60px;
         font-family: 'Montserrat', sans-serif; 
-        border: 4px solid white;
+        border: 5px solid $txt-white;
         padding: 10px 5px 10px 5px;
     }
 }
